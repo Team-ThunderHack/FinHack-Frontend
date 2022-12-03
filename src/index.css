@@ -1,3 +1,5 @@
+@import "antd/dist/antd.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -140,4 +142,38 @@
 
   background: #65c4fa;
   filter: blur(150px);
+}
+
+.dark .ant-table {
+  border: 1px solid white;
+}
+
+.dark .ant-table-thead .ant-table-cell {
+  color: white;
+  background-color: #33373e;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dark .ant-table-content {
+  background-color: #000;
+  color: white;
+}
+
+.ant-table-content .ant-table-row {
+  max-width: 20%;
+}
+
+.dark .ant-table-content .ant-table-row:hover {
+  color: black;
+}
+
+.ant-table-title {
+  color: rgb(43, 7, 158);
+}
+
+.dark .ant-table-title {
+  color: white;
+  background-color: #33373e;
+  border-bottom: 1px solid white;
 }

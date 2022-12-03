@@ -8,6 +8,7 @@ const LearningPath = () => {
       <div className="p-2 flex flex-row flex-wrap gap-5 justify-start items-center">
         {fundamentals.map((video, i) => (
           <iframe
+            key={i}
             width={300}
             height={300}
             src={video.src}
