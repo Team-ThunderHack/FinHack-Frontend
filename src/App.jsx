@@ -11,9 +11,8 @@ import { Navbar, Footer } from "./components";
 
 const App = () => {
   return (
-    <div className="bg-black min-h-screen text-white ">
+    <div className="bg-primary-black overflow-hidden text-white ">
       <Navbar />
-      <h1>App</h1>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/options-dashboard" element={<OptionsDashboard />} />
