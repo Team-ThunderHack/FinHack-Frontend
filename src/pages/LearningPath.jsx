@@ -12,7 +12,7 @@ const LearningPath = () => {
             height={300}
             src={video.src}
             title={video.title}
-            frameborder="0"
+            // frameborder="0"
           ></iframe>
         ))}
       </div>
