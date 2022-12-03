@@ -13,7 +13,6 @@ const App = () => {
   return (
     <div className="bg-primary-black overflow-hidden text-white ">
       <Navbar />
-      <h1>App</h1>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/options-dashboard" element={<OptionsDashboard />} />
