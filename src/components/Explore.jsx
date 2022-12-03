@@ -18,7 +18,7 @@ const exploreFeatures = [
   {
     id: "world-2",
     imgUrl: planet02,
-    title: "Intraday Index",
+    title: "Strategies",
     to: "/intraday-index",
   },
   {
