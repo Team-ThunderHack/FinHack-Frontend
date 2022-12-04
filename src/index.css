@@ -1,3 +1,5 @@
+@import "antd/dist/antd.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -140,4 +142,64 @@
 
   background: #65c4fa;
   filter: blur(150px);
+}
+
+.ant-table {
+  border: 1px solid #1a232e;
+  border-left-color: #1a232e;
+}
+
+.ant-table-thead .ant-table-cell {
+  color: white;
+  background-color: #33373e;
+  font-size: 20px;
+  font-weight: bold;
+  border-color: #1a232e;
+}
+
+.ant-table-content {
+  background-color: #1a232e;
+  color: white;
+  border-color: #1a232e;
+}
+
+.ant-table-content .ant-table-row {
+  max-width: 20%;
+  border-color: #1a232e;
+}
+
+.ant-table-row {
+  border-color: #1a232e;
+}
+
+.ant-table-content .ant-table-row:hover {
+  color: black;
+  border-color: #1a232e;
+}
+
+.ant-table-title {
+  color: white;
+  background-color: #33373e;
+  border-bottom: 1px solid #1a232e;
+}
+
+.ant-table-tbody > tr > td {
+  border-color: #1a232e;
+}
+
+/* .ant-table-pagination-left > * {
+  background-color: #000;
+} */
+
+.ant-table-pagination-right > * {
+  background-color: #1a232e;
+  color: white;
+}
+
+.ant-table-pagination {
+  color: white;
+}
+
+.ant-table-container {
+  border-color: #1a232e;
 }
