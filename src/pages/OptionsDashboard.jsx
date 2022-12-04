@@ -4,6 +4,7 @@ import { MdDownload } from "react-icons/md";
 import { GiFunnel } from "react-icons/gi";
 import { GoTriangleDown, GoTriangleUp } from "react-icons/go";
 
+import { Footer } from "../components";
 import optionsData from "../files/optionsData.json";
 const tableData = optionsData.data;
 
@@ -141,16 +142,24 @@ const dataSource = tableData.map((data, index) => ({
 
 const OptionsDashboard = () => {
   return (
-    <div className="flex justify-center items-center dark">
-      <div className="gradient-02" />
-      <Table
-        className="mt-10"
-        columns={columns}
-        dataSource={dataSource}
-        pagination={true}
-        title={titleFunction}
-      />
-    </div>
+    <>
+      <div className="flex justify-center items-center dark">
+        <div className="gradient-02" />
+        <Table
+          className="mt-10"
+          columns={columns}
+          dataSource={dataSource}
+          pagination={true}
+          title={titleFunction}
+        />
+      </div>
+      {/* <div className="gradient-03" /> */}
+      {/* <div className="gradient-04" /> */}
+      {/* <div className="gradient-05" /> */}
+      <div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

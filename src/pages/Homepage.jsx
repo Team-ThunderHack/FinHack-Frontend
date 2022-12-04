@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Hero, Explore, About } from "../components";
+import { Hero, Explore, About, Footer } from "../components";
 
 const Homepage = () => {
   return (
@@ -10,6 +10,9 @@ const Homepage = () => {
         <About />
         <div className="gradient-03 z-0" />
         <Explore />
+      </div>
+      <div>
+        <Footer display={true} />
       </div>
     </div>
   );

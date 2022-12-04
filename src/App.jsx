@@ -19,9 +19,6 @@ const App = () => {
         <Route path="/learningPath" element={<LearningPath />} />
         <Route path="/intraday-index" element={<IntradayIndex />} />
       </Routes>
-      <div>
-        <Footer />
-      </div>
     </div>
   );
 };

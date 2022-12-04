@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { dataAnalysis, fundamentals, technicals } from "../assets/constants";
+import { Footer } from "../components";
 
 const path = [
   {
@@ -17,17 +18,11 @@ const path = [
 ];
 
 const LearningPath = () => {
-  const hello = async () => {
-    const data = await fetch("https://www.google.com/");
-    console.log(data);
-  };
-  hello();
-
   const [active, setActive] = useState(2);
-  console.log(active);
+  // console.log(active);
   return (
     <div className="mx-32">
-      <div className="tabs flex flex-row gap-8 text-2xl m-8">
+      <div className="tabs flex flex-row gap-5 text-2xl m-8">
         {path.map((p, idx) => {
           if (idx == active) {
             return (
@@ -47,13 +42,13 @@ const LearningPath = () => {
           );
         })}
       </div>
-      <div className="p-8 flex flex-row flex-wrap gap-5 justify-start items-center hover:cursor-pointer">
+      <div className="p-6 flex flex-row flex-wrap gap-5 justify-center items-center hover:cursor-pointer">
         {path[active].data.map((video, i) => {
           return (
             <div key={i} className="bg-[#294559] p-8 rounded-xl">
               <iframe
-                width={400}
-                height={225}
+                width={350}
+                height={300}
                 src={video.src}
                 title={video.title}
                 // frameborder="0"
@@ -68,6 +63,9 @@ const LearningPath = () => {
             </div>
           );
         })}
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
